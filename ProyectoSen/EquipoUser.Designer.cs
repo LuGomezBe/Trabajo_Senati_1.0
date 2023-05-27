@@ -1,6 +1,6 @@
 ﻿namespace ProyectoSen
 {
-    partial class Equipo
+    partial class EquipoUser
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Equipo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquipoUser));
+            this.txtDni = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmbTipoE = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.dgvEquipo = new System.Windows.Forms.DataGridView();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.cmbTipoE = new System.Windows.Forms.ComboBox();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.txtDni = new System.Windows.Forms.TextBox();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
@@ -54,77 +53,95 @@
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.dgvTecnico = new System.Windows.Forms.DataGridView();
             this.SelectT = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTecnico)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // txtDni
+            // 
+            this.txtDni.Location = new System.Drawing.Point(10, 48);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(100, 20);
+            this.txtDni.TabIndex = 36;
             // 
             // txtId
             // 
             this.txtId.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(22, 361);
+            this.txtId.Location = new System.Drawing.Point(16, 361);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 6;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtMarca.Location = new System.Drawing.Point(196, 412);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(100, 20);
-            this.txtMarca.TabIndex = 8;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.White;
-            this.txtDescripcion.Location = new System.Drawing.Point(22, 478);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(325, 95);
-            this.txtDescripcion.TabIndex = 9;
+            this.txtId.TabIndex = 37;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 329);
+            this.label1.Location = new System.Drawing.Point(13, 319);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 10;
+            this.label1.TabIndex = 38;
             this.label1.Text = "N° Registro";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 384);
+            this.label2.Location = new System.Drawing.Point(13, 407);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
-            this.label2.TabIndex = 11;
+            this.label2.TabIndex = 39;
             this.label2.Text = "TIPO DE EQUIPO";
+            // 
+            // cmbTipoE
+            // 
+            this.cmbTipoE.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cmbTipoE.FormattingEnabled = true;
+            this.cmbTipoE.Items.AddRange(new object[] {
+            "LAPTOP",
+            "IMPRESORA",
+            "CPU"});
+            this.cmbTipoE.Location = new System.Drawing.Point(22, 435);
+            this.cmbTipoE.Name = "cmbTipoE";
+            this.cmbTipoE.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoE.TabIndex = 40;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(193, 384);
+            this.label3.Location = new System.Drawing.Point(188, 456);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 12;
+            this.label3.TabIndex = 41;
             this.label3.Text = "Marca";
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtMarca.Location = new System.Drawing.Point(191, 472);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(100, 20);
+            this.txtMarca.TabIndex = 42;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 449);
+            this.label4.Location = new System.Drawing.Point(19, 479);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 13);
-            this.label4.TabIndex = 13;
+            this.label4.TabIndex = 43;
             this.label4.Text = "Descripcion de Falla";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.BackColor = System.Drawing.Color.White;
+            this.txtDescripcion.Location = new System.Drawing.Point(22, 511);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(379, 107);
+            this.txtDescripcion.TabIndex = 44;
             // 
             // dgvEquipo
             // 
@@ -132,20 +149,20 @@
             this.dgvEquipo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvEquipo.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvEquipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEquipo.Location = new System.Drawing.Point(396, 329);
+            this.dgvEquipo.Location = new System.Drawing.Point(459, 336);
             this.dgvEquipo.Name = "dgvEquipo";
             this.dgvEquipo.RowHeadersWidth = 51;
-            this.dgvEquipo.Size = new System.Drawing.Size(434, 169);
-            this.dgvEquipo.TabIndex = 14;
-            this.dgvEquipo.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            this.dgvEquipo.Size = new System.Drawing.Size(363, 166);
+            this.dgvEquipo.TabIndex = 45;
+            this.dgvEquipo.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvEquipo_CellMouseClick);
             // 
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnModificar.Location = new System.Drawing.Point(423, 504);
+            this.btnModificar.Location = new System.Drawing.Point(436, 522);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(145, 40);
-            this.btnModificar.TabIndex = 15;
+            this.btnModificar.Size = new System.Drawing.Size(75, 29);
+            this.btnModificar.TabIndex = 46;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
@@ -155,10 +172,10 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Location = new System.Drawing.Point(423, 545);
+            this.btnSave.Location = new System.Drawing.Point(551, 522);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(294, 38);
-            this.btnSave.TabIndex = 16;
+            this.btnSave.Size = new System.Drawing.Size(111, 28);
+            this.btnSave.TabIndex = 47;
             this.btnSave.Text = "GUARDAR";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.UseVisualStyleBackColor = false;
@@ -169,10 +186,10 @@
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClear.Location = new System.Drawing.Point(574, 504);
+            this.btnClear.Location = new System.Drawing.Point(712, 522);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(143, 40);
-            this.btnClear.TabIndex = 17;
+            this.btnClear.Size = new System.Drawing.Size(87, 28);
+            this.btnClear.TabIndex = 48;
             this.btnClear.Text = "ELIMINAR";
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.UseVisualStyleBackColor = false;
@@ -181,61 +198,30 @@
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnVolver.Location = new System.Drawing.Point(808, 238);
+            this.btnVolver.Location = new System.Drawing.Point(905, 506);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 29);
-            this.btnVolver.TabIndex = 18;
+            this.btnVolver.TabIndex = 49;
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // cmbTipoE
-            // 
-            this.cmbTipoE.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.cmbTipoE.FormattingEnabled = true;
-            this.cmbTipoE.Items.AddRange(new object[] {
-            "LAPTOP",
-            "IMPRESORA",
-            "CPU"});
-            this.cmbTipoE.Location = new System.Drawing.Point(22, 411);
-            this.cmbTipoE.Name = "cmbTipoE";
-            this.cmbTipoE.Size = new System.Drawing.Size(121, 21);
-            this.cmbTipoE.TabIndex = 19;
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Red;
-            this.btnReset.Location = new System.Drawing.Point(870, 4);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 29);
-            this.btnReset.TabIndex = 20;
-            this.btnReset.Text = "RESET";
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // txtDni
-            // 
-            this.txtDni.Location = new System.Drawing.Point(16, 29);
-            this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(100, 20);
-            this.txtDni.TabIndex = 33;
-            // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(159, 329);
+            this.lblFecha.Location = new System.Drawing.Point(171, 336);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(37, 13);
-            this.lblFecha.TabIndex = 35;
+            this.lblFecha.TabIndex = 50;
             this.lblFecha.Text = "Fecha";
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(280, 329);
+            this.lblHora.Location = new System.Drawing.Point(261, 336);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(30, 13);
-            this.lblHora.TabIndex = 36;
+            this.lblHora.TabIndex = 51;
             this.lblHora.Text = "Hora";
             // 
             // horafecha
@@ -246,20 +232,20 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtDni);
-            this.groupBox1.Location = new System.Drawing.Point(6, 25);
+            this.groupBox1.Location = new System.Drawing.Point(12, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(137, 80);
-            this.groupBox1.TabIndex = 38;
+            this.groupBox1.Size = new System.Drawing.Size(180, 100);
+            this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BUSCAR CLIENTE";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtTecnico);
-            this.groupBox2.Location = new System.Drawing.Point(431, 25);
+            this.groupBox2.Location = new System.Drawing.Point(459, 19);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(160, 80);
-            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabIndex = 53;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "A CARGO";
             // 
@@ -276,11 +262,11 @@
             this.dgvCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvCliente.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(12, 133);
+            this.dgvCliente.Location = new System.Drawing.Point(22, 146);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.RowHeadersWidth = 51;
             this.dgvCliente.Size = new System.Drawing.Size(353, 132);
-            this.dgvCliente.TabIndex = 40;
+            this.dgvCliente.TabIndex = 54;
             this.dgvCliente.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCliente_CellMouseClick);
             // 
             // dgvTecnico
@@ -289,63 +275,50 @@
             this.dgvTecnico.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvTecnico.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvTecnico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTecnico.Location = new System.Drawing.Point(431, 131);
+            this.dgvTecnico.Location = new System.Drawing.Point(479, 144);
             this.dgvTecnico.Name = "dgvTecnico";
             this.dgvTecnico.RowHeadersWidth = 51;
             this.dgvTecnico.Size = new System.Drawing.Size(349, 134);
-            this.dgvTecnico.TabIndex = 41;
-
+            this.dgvTecnico.TabIndex = 55;
             this.dgvTecnico.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTecnico_CellMouseClick);
             // 
             // SelectT
             // 
-            this.SelectT.Location = new System.Drawing.Point(836, 224);
+            this.SelectT.Location = new System.Drawing.Point(905, 244);
             this.SelectT.Name = "SelectT";
             this.SelectT.Size = new System.Drawing.Size(75, 23);
-            this.SelectT.TabIndex = 43;
+            this.SelectT.TabIndex = 56;
             this.SelectT.Text = "ASIGNAR";
             this.SelectT.UseVisualStyleBackColor = true;
             this.SelectT.Click += new System.EventHandler(this.SelectT_Click);
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnVolver);
-            this.groupBox3.Location = new System.Drawing.Point(12, 306);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(911, 289);
-            this.groupBox3.TabIndex = 44;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "REGISTRO EQUIPO";
-            // 
-            // Equipo
+            // EquipoUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(975, 607);
+            this.ClientSize = new System.Drawing.Size(992, 630);
             this.Controls.Add(this.SelectT);
             this.Controls.Add(this.dgvTecnico);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.cmbTipoE);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.dgvEquipo);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmbTipoE);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox3);
-            this.Name = "Equipo";
-            this.Text = "Equipo";
+            this.Name = "EquipoUser";
+            this.Text = "EquipoUser";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -353,38 +326,34 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTecnico)).EndInit();
-            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbTipoE;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.DataGridView dgvEquipo;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.ComboBox cmbTipoE;
-        private System.Windows.Forms.Button btnReset;
-        public System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtTecnico;
         private System.Windows.Forms.DataGridView dgvCliente;
         private System.Windows.Forms.DataGridView dgvTecnico;
-        private System.Windows.Forms.TextBox txtTecnico;
         private System.Windows.Forms.Button SelectT;
-        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

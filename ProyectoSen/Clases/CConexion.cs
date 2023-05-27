@@ -18,8 +18,9 @@ namespace ProyectoSen.Clases
         static string usuario = "root";
         static string password = "";
         static string puerto = "3306";
+        static bool time = true;
 
-        string cadenaConexion = "server=" + servidor + ";" + "port=" + puerto + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "database=" + bd + ";";
+        string cadenaConexion = "server=" + servidor + ";" + "port=" + puerto + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "database=" + bd + ";" + "AllowZeroDateTime=" + time + ";";
 
         public MySqlConnection establecerConexion()
         {

@@ -137,5 +137,18 @@ namespace ProyectoSen.Clases
                 MessageBox.Show("No  pueba 1 los datos de la base de datos, error " + ex.ToString());
             }
         }
+        public void SelecionUnCliente(DataGridView tablaEquipo, TextBox Dni)
+        {
+            try
+            {
+
+                Dni.Text = tablaEquipo.CurrentRow.Cells[3].Value.ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Noo se seleciona los datos de la base de datos, error " + ex.ToString());
+            }
+        }
     }
 }

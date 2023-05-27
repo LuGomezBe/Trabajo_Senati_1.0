@@ -83,9 +83,8 @@
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(143, 34);
             this.txtUsuario.MaxLength = 50;
-            this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(322, 24);
+            this.txtUsuario.Size = new System.Drawing.Size(322, 20);
             this.txtUsuario.TabIndex = 9;
             // 
             // label5
@@ -104,9 +103,9 @@
             this.txtContra.ImeMode = System.Windows.Forms.ImeMode.On;
             this.txtContra.Location = new System.Drawing.Point(143, 80);
             this.txtContra.MaxLength = 50;
-            this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(322, 24);
+            this.txtContra.PasswordChar = '*';
+            this.txtContra.Size = new System.Drawing.Size(322, 22);
             this.txtContra.TabIndex = 10;
             this.txtContra.UseSystemPasswordChar = true;
             // 

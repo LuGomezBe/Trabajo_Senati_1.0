@@ -41,12 +41,10 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.lblTest = new System.Windows.Forms.Label();
-            this.cmbElegirU = new System.Windows.Forms.ComboBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,47 +151,18 @@
             this.dgvCliente.RowHeadersWidth = 51;
             this.dgvCliente.Size = new System.Drawing.Size(327, 150);
             this.dgvCliente.TabIndex = 10;
-            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
-            this.dgvCliente.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellDoubleClick);
+            this.dgvCliente.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCliente_CellMouseClick);
             // 
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnModificar.Location = new System.Drawing.Point(50, 290);
+            this.btnModificar.Location = new System.Drawing.Point(52, 290);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 30);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Location = new System.Drawing.Point(172, 290);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 30);
-            this.btnSave.TabIndex = 12;
-            this.btnSave.Text = "GUARDAR";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
-            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClear.Location = new System.Drawing.Point(323, 290);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(88, 30);
-            this.btnClear.TabIndex = 13;
-            this.btnClear.Text = "ELIMINAR";
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnVolver
             // 
@@ -216,25 +185,33 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // lblTest
+            // btnClear
             // 
-            this.lblTest.AutoSize = true;
-            this.lblTest.Location = new System.Drawing.Point(181, 44);
-            this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(13, 13);
-            this.lblTest.TabIndex = 32;
-            this.lblTest.Text = "--";
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
+            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClear.Location = new System.Drawing.Point(323, 290);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(88, 30);
+            this.btnClear.TabIndex = 13;
+            this.btnClear.Text = "ELIMINAR";
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // cmbElegirU
+            // btnSave
             // 
-            this.cmbElegirU.FormattingEnabled = true;
-            this.cmbElegirU.Items.AddRange(new object[] {
-            "ADMIN",
-            "USUARIO"});
-            this.cmbElegirU.Location = new System.Drawing.Point(27, 36);
-            this.cmbElegirU.Name = "cmbElegirU";
-            this.cmbElegirU.Size = new System.Drawing.Size(121, 21);
-            this.cmbElegirU.TabIndex = 33;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.Location = new System.Drawing.Point(172, 290);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(112, 30);
+            this.btnSave.TabIndex = 12;
+            this.btnSave.Text = "GUARDAR";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Cliente
             // 
@@ -242,8 +219,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cmbElegirU);
-            this.Controls.Add(this.lblTest);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnClear);
@@ -286,7 +261,5 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnReset;
         public System.Windows.Forms.TextBox txtDni;
-        private System.Windows.Forms.Label lblTest;
-        private System.Windows.Forms.ComboBox cmbElegirU;
     }
 }

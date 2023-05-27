@@ -33,7 +33,6 @@
             this.btnRegistrarC = new System.Windows.Forms.Button();
             this.btnRegistrarE = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,27 +86,17 @@
             this.panel1.Size = new System.Drawing.Size(210, 346);
             this.panel1.TabIndex = 5;
             // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(54, 25);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 6;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
-            // 
             // InicioAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtUsuario);
+            this.ClientSize = new System.Drawing.Size(930, 465);
             this.Controls.Add(this.btnTareas);
             this.Controls.Add(this.panel1);
             this.Name = "InicioAdmin";
             this.Text = "InicioAdmin";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -117,6 +106,5 @@
         private System.Windows.Forms.Button btnRegistrarC;
         private System.Windows.Forms.Button btnRegistrarE;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtUsuario;
     }
 }

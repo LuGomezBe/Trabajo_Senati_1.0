@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using K4os.Compression.LZ4.Encoders;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -30,7 +31,7 @@ namespace ProyectoSen.Clases
                 MessageBox.Show("No iNI se mostraron los datos de la base de datos, error " + ex.ToString());
             }
         }
-        public void guardarEquipo(TextBox dni,ComboBox equipo, TextBox marca, TextBox descripcion,Label fecha ,Label hora)
+        public void guardarEquipo(TextBox dni,ComboBox equipo, TextBox marca, TextBox descripcion,Label fecha,Label hora )
         {
             try
             {
@@ -49,7 +50,7 @@ namespace ProyectoSen.Clases
                 MessageBox.Show("No FECHA DE MRD se guardo los datos de la base de datos, error " + ex.ToString());
             }
         }
-        public void SelecionEquipo(DataGridView tablaEquipo,TextBox Dni ,TextBox Id, ComboBox equipo, TextBox marca, TextBox descripcion)
+        public void SelecionEquipo(DataGridView tablaEquipo,TextBox Id ,TextBox Dni, ComboBox equipo, TextBox marca, TextBox descripcion ,Label fecha , Label hora)
         {
             try
             {
@@ -58,19 +59,21 @@ namespace ProyectoSen.Clases
                 equipo.Text = tablaEquipo.CurrentRow.Cells[2].Value.ToString();
                 marca.Text = tablaEquipo.CurrentRow.Cells[3].Value.ToString();
                 descripcion.Text = tablaEquipo.CurrentRow.Cells[4].Value.ToString();
+                fecha.Text = tablaEquipo.CurrentRow.Cells[5].Value.ToString();
+                hora.Text = tablaEquipo.CurrentRow.Cells[6].Value.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Noo se seleciona los datos de la base de datos, error " + ex.ToString());
             }
         }
-        public void modificarEquipo(TextBox Id, TextBox Dni,ComboBox equipo, TextBox marca, TextBox descripcion)
+        public void modificarEquipo(TextBox Id, TextBox Dni,ComboBox equipo, TextBox marca, TextBox descripcion ,Label fecha , Label hora)
         {
             try
             {
                 CConexion objetoConexion = new CConexion();
 
-                String query = "update equipo set DNI_Cliente ='" + Dni.Text + "',Tipo_d_Equipo='" + equipo.Text + "', Marca='" + marca.Text + "', Descripcion_Falla ='" + descripcion.Text + "' where Num_Registro= '" + Id.Text + "';";
+                String query = "update equipo set DNI_Cliente ='" + Dni.Text + "',Tipo_d_Equipo='" + equipo.Text + "', Marca='" + marca.Text + "', Descripcion_Falla ='" + descripcion.Text + "', Fecha ='" + fecha.Text + "', Hora ='" + hora.Text + "' where Num_Registro= '" + Id.Text + "';";
                 MySqlCommand mySqlCommand = new MySqlCommand(query, objetoConexion.establecerConexion());
                 MySqlDataReader reader = mySqlCommand.ExecuteReader();
 
@@ -156,5 +159,6 @@ namespace ProyectoSen.Clases
                 MessageBox.Show("No  pueba 1 los datos de la base de datos, error " + ex.ToString());
             }
         }
+        
     }
 }

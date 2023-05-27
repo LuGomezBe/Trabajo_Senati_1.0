@@ -44,7 +44,7 @@ namespace ProyectoSen
                 {
                     this.Hide();
                     MessageBox.Show("Bienvenido " + usuario);
-                    Principal formularioP = new Principal();
+                    InicioUsuario formularioP = new InicioUsuario();
                     formularioP.ShowDialog();
                 }
 

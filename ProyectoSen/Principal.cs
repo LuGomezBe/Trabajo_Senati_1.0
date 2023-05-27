@@ -1,4 +1,4 @@
-﻿using ProyectoSen.Clases;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +27,8 @@ namespace ProyectoSen
             //----   -----    ---   ----------   -----   ------    ----   -----------------------------
             //----            ---          ---   -------    ----        -------------------------------
             //-----------------------------------------------------------------------------------------
+            Clases.CReporte objetoReporte = new Clases.CReporte();
+            objetoReporte.mostrarReporte(dgvReporte);
         }
 
         private void btnCliente_Click(object sender, EventArgs e)
@@ -45,17 +47,6 @@ namespace ProyectoSen
         {
             Clases.CTecnico objetoTecnico = new Clases.CTecnico();
             objetoTecnico.mostrarTecnico(dgvPrincipal);
-        }
-
-        private void btnCrear_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnReporte_Click(object sender, EventArgs e)
-        {
-            Clases.CReporte objetoReporte = new Clases.CReporte();
-            objetoReporte.mostrarReporte(dgvReporte);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -80,37 +71,17 @@ namespace ProyectoSen
             objetoReporte.BuscarReporte(dgvReporte,txtBuscarR);
         }
 
-        private void dgvPrincipal_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            
-                
-            
 
-            
-        }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
             //string User = "Admin";    //
 
-
-            if(cmbElegirU.Text == "ADMIN")
-            {
                 this.Hide();
                 InicioAdmin admin = new InicioAdmin();
                 admin.ShowDialog();
-            }
+           
 
-            if (cmbElegirU.Text == "USUARIO")
-            {
-                this.Hide();
-                InicioUsuario usuario = new InicioUsuario();
-                usuario.ShowDialog();
-            }
-            else
-            {
-                lblTest.Text = "Error coloque usuario";
-            }
         }
 
 

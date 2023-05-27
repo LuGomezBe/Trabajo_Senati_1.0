@@ -105,11 +105,23 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClienteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteUser.Designer.cs">
+      <DependentUpon>ClienteUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Equipo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Equipo.Designer.cs">
       <DependentUpon>Equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipoUser.Designer.cs">
+      <DependentUpon>EquipoUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -141,13 +153,25 @@
     <Compile Include="Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrincipalUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalUser.Designer.cs">
+      <DependentUpon>PrincipalUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClienteUser.resx">
+      <DependentUpon>ClienteUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Equipo.resx">
       <DependentUpon>Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipoUser.resx">
+      <DependentUpon>EquipoUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -163,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalUser.resx">
+      <DependentUpon>PrincipalUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -20,21 +20,21 @@ namespace ProyectoSen
         private void btnTareas_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Principal principal = new Principal();
+            PrincipalUser principal = new PrincipalUser();
             principal.ShowDialog();
         }
 
         private void btnRegistrarC_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Cliente cliente = new Cliente();
+            PrincipalUser cliente = new PrincipalUser();
             cliente.ShowDialog();
         }
         
         private void btnRegistrarE_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Equipo equipo = new Equipo();
+            EquipoUser equipo = new EquipoUser();
             equipo.ShowDialog();
         }
     }

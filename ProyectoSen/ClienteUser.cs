@@ -10,19 +10,12 @@ using System.Windows.Forms;
 
 namespace ProyectoSen
 {
-    public partial class Cliente : Form
+    public partial class ClienteUser : Form
     {
-        public Cliente()
+        public ClienteUser()
         {
             InitializeComponent();
             Clases.CCliente objetoCliente = new Clases.CCliente();
-            objetoCliente.mostrarCliente(dgvCliente);
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            Clases.CCliente objetoCliente = new Clases.CCliente();
-            objetoCliente.modificarCliente(txtId, txtNombre, txtApellido, txtDni, txtTelefono);
             objetoCliente.mostrarCliente(dgvCliente);
         }
 
@@ -33,25 +26,17 @@ namespace ProyectoSen
             objetoCliente.mostrarCliente(dgvCliente);
         }
 
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Clases.CCliente objetoCliente = new Clases.CCliente();
+            objetoCliente.modificarCliente(txtId, txtNombre, txtApellido, txtDni, txtTelefono);
+            objetoCliente.mostrarCliente(dgvCliente);
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             Clases.CCliente objetoCliente = new Clases.CCliente();
             objetoCliente.DeleteCliente(txtId);
-            objetoCliente.mostrarCliente(dgvCliente);
-        }
-
-        private void btnVolver_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            InicioAdmin admin = new InicioAdmin();
-            admin.ShowDialog();
-        }
-
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            Clases.CCliente objetoCliente = new Clases.CCliente();
-            objetoCliente.ResetCliente();
             objetoCliente.mostrarCliente(dgvCliente);
         }
 
@@ -61,5 +46,11 @@ namespace ProyectoSen
             objetoCliente.SelecionCliente(dgvCliente, txtId, txtNombre, txtApellido, txtDni, txtTelefono);
         }
 
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InicioAdmin admin = new InicioAdmin();
+            admin.ShowDialog();
+        }
     }
 }

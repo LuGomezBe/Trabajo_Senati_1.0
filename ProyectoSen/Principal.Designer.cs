@@ -34,7 +34,6 @@
             this.btnCliente = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
             this.dgvReporte = new System.Windows.Forms.DataGridView();
-            this.btnReporte = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.cmbBuscar = new System.Windows.Forms.ComboBox();
@@ -43,12 +42,7 @@
             this.btnBuscarR = new System.Windows.Forms.Button();
             this.txtBuscarR = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDniCliente = new System.Windows.Forms.TextBox();
-            this.txtDniTec = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.cmbElegirU = new System.Windows.Forms.ComboBox();
-            this.lblTest = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).BeginInit();
             this.panel1.SuspendLayout();
@@ -67,7 +61,6 @@
             this.dgvPrincipal.RowHeadersWidth = 51;
             this.dgvPrincipal.Size = new System.Drawing.Size(582, 232);
             this.dgvPrincipal.TabIndex = 0;
-            this.dgvPrincipal.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPrincipal_CellMouseClick);
             // 
             // btnTecnico
             // 
@@ -116,24 +109,13 @@
             // dgvReporte
             // 
             this.dgvReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReporte.Location = new System.Drawing.Point(58, 442);
+            this.dgvReporte.Location = new System.Drawing.Point(58, 411);
             this.dgvReporte.Margin = new System.Windows.Forms.Padding(2);
             this.dgvReporte.Name = "dgvReporte";
             this.dgvReporte.RowHeadersWidth = 51;
             this.dgvReporte.RowTemplate.Height = 24;
-            this.dgvReporte.Size = new System.Drawing.Size(569, 122);
+            this.dgvReporte.Size = new System.Drawing.Size(569, 153);
             this.dgvReporte.TabIndex = 18;
-            // 
-            // btnReporte
-            // 
-            this.btnReporte.Location = new System.Drawing.Point(64, 366);
-            this.btnReporte.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(56, 19);
-            this.btnReporte.TabIndex = 19;
-            this.btnReporte.Text = "Reporte";
-            this.btnReporte.UseVisualStyleBackColor = true;
-            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // btnBuscar
             // 
@@ -194,7 +176,7 @@
             // 
             // btnBuscarR
             // 
-            this.btnBuscarR.Location = new System.Drawing.Point(448, 366);
+            this.btnBuscarR.Location = new System.Drawing.Point(300, 371);
             this.btnBuscarR.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarR.Name = "btnBuscarR";
             this.btnBuscarR.Size = new System.Drawing.Size(56, 19);
@@ -205,7 +187,7 @@
             // 
             // txtBuscarR
             // 
-            this.txtBuscarR.Location = new System.Drawing.Point(352, 367);
+            this.txtBuscarR.Location = new System.Drawing.Point(170, 370);
             this.txtBuscarR.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarR.Name = "txtBuscarR";
             this.txtBuscarR.Size = new System.Drawing.Size(76, 20);
@@ -214,36 +196,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(263, 368);
+            this.label2.Location = new System.Drawing.Point(69, 370);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 25;
             this.label2.Text = "DNI Tecnico";
-            // 
-            // txtDniCliente
-            // 
-            this.txtDniCliente.Location = new System.Drawing.Point(280, 419);
-            this.txtDniCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDniCliente.Name = "txtDniCliente";
-            this.txtDniCliente.Size = new System.Drawing.Size(76, 20);
-            this.txtDniCliente.TabIndex = 26;
-            // 
-            // txtDniTec
-            // 
-            this.txtDniTec.Location = new System.Drawing.Point(114, 419);
-            this.txtDniTec.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDniTec.Name = "txtDniTec";
-            this.txtDniTec.Size = new System.Drawing.Size(76, 20);
-            this.txtDniTec.TabIndex = 27;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(448, 419);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(76, 20);
-            this.txtMarca.TabIndex = 28;
             // 
             // btnVolver
             // 
@@ -255,42 +213,16 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // cmbElegirU
-            // 
-            this.cmbElegirU.FormattingEnabled = true;
-            this.cmbElegirU.Items.AddRange(new object[] {
-            "ADMIN",
-            "USUARIO"});
-            this.cmbElegirU.Location = new System.Drawing.Point(35, 11);
-            this.cmbElegirU.Name = "cmbElegirU";
-            this.cmbElegirU.Size = new System.Drawing.Size(121, 21);
-            this.cmbElegirU.TabIndex = 30;
-            // 
-            // lblTest
-            // 
-            this.lblTest.AutoSize = true;
-            this.lblTest.Location = new System.Drawing.Point(186, 19);
-            this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(13, 13);
-            this.lblTest.TabIndex = 31;
-            this.lblTest.Text = "--";
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(140)))), ((int)(((byte)(166)))));
             this.ClientSize = new System.Drawing.Size(802, 574);
-            this.Controls.Add(this.lblTest);
-            this.Controls.Add(this.cmbElegirU);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.txtDniTec);
-            this.Controls.Add(this.txtDniCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscarR);
             this.Controls.Add(this.btnBuscarR);
-            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.dgvReporte);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnCliente);
@@ -317,7 +249,6 @@
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.DataGridView dgvReporte;
-        private System.Windows.Forms.Button btnReporte;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.ComboBox cmbBuscar;
@@ -326,11 +257,6 @@
         private System.Windows.Forms.Button btnBuscarR;
         private System.Windows.Forms.TextBox txtBuscarR;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDniCliente;
-        private System.Windows.Forms.TextBox txtDniTec;
-        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.ComboBox cmbElegirU;
-        private System.Windows.Forms.Label lblTest;
     }
 }
